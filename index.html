@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+   <head>
+
+              <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WCCDYCNQC1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WCCDYCNQC1');
+</script>
+
+      <title>Inazuma Eleven Index - Stats & Informations</title>
+      <meta name="title" content="Inazuma Eleven Index - Stats & Informations">
+      <meta name="description" content="Find all the players from the different Inazuma Eleven games. Their detailed statistics, techniques, and teams. Everything you will need to establish the optimal in-game strategies.">
+      <link href="style.css" rel="stylesheet" type="text/css" media="all" />
+      <script src="players.js"></script>
+   </head>
+   <body onload="alert('This website is still under development. Contact:: tom@ownstudio.fr');"></body>
+      <div class="container">
+         <div class="left">
+            <div class="button-area">
+               <label for="games">Filters:</label>
+               <select id="games">
+                  <option value="all">All Games</option>
+                  <option value="IE1">Inazuma Eleven 1</option>
+                  <option value="IE2">Inazuma Eleven 2</option>
+                  <option value="IE3">Inazuma Eleven 3</option>
+                  <option value="GO1">Inazuma Eleven GO</option>
+                  <option value="GO2">Inazuma Eleven Chrono Stones</option>
+                  <option value="GO3">Inazuma Eleven Galaxy</option>
+               </select>
+               <select id="teams">
+                <option value="all">All Teams</option>
+                <option value="Raimon">Raimon</option>
+                <option value="Street Sally's">Street Sally's</option>
+                <option value="Gemini Storm">Gemini Storm</option>
+                <option value="Team Ogre">Team Ogre</option>
+              </select>
+              <select id="elements">
+               <option value="all">All Elements</option>
+               <option value="https://inazuma-eleven.fr/team-builder/images/elements/Earth.png">Earth</option>
+               <option value="https://inazuma-eleven.fr/team-builder/images/elements/Fire.png">Fire</option>
+               <option value="https://inazuma-eleven.fr/team-builder/images/elements/Wind.png">Wind</option>
+               <option value="https://inazuma-eleven.fr/team-builder/images/elements/Wood.png">Wood</option>
+             </select>
+             <select id="genders">
+               <option value="all">All Genders</option>
+               <option value="https://inazuma-eleven.fr/team-builder/images/genders/Male.png">Male</option>
+               <option value="https://inazuma-eleven.fr/team-builder/images/genders/Female.png">Female</option>
+             </select>
+             <select id="positions">
+               <option value="all">All Positions</option>
+               <option value="https://inazuma-eleven.fr/team-builder/images/positions/GK.png">Goalkeeper</option>
+               <option value="https://inazuma-eleven.fr/team-builder/images/positions/DF.png">Defender</option>
+               <option value="https://inazuma-eleven.fr/team-builder/images/positions/MF.png">Midfielder</option>
+               <option value="https://inazuma-eleven.fr/team-builder/images/positions/FW.png">Forward</option>
+             </select>
+               <!-- Espace pour ajouter des boutons en haut -->
+            </div>
+            <div class="player-list">
+            </div>
+            <div class="button-area">
+                <button onclick="window.open('https://discord.gg/SD9KK3GpVm', '_blank')">Join Our Discord Server</button>
+                <button onclick="window.open('https://inazuma-eleven.fr/team-builder', '_blank')">Build your own team</button>
+                
+               <!-- Espace pour ajouter des boutons en bas -->
+            </div>
+         </div>
+         <div class="right">
+            <div class="player-info">
+            </div>
+         </div>
+      </div>
+      <script src="script.js"></script>
+      <script src="click.js"></script>
+   </body>
+</html>

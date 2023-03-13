@@ -1,0 +1,83 @@
+body {
+    background-image: url("images/Background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+   
+   .container {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+  }
+  
+  .left {
+    width: 50%;
+    background-color: rgba(242, 242, 242, 0.5);
+    padding: 20px;
+  }
+  
+  .button-area {
+    height: 50px;
+    /* Ajouter des styles pour l'espacement, les couleurs, etc. */
+  }
+  
+  .player-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: calc(100% - 100px); /* La hauteur totale du conteneur moins la hauteur de la zone de boutons */
+    overflow-y: scroll; /* Ajouter la propriété overflow-y avec une valeur de scroll */
+  }
+  
+  .player-list::-webkit-scrollbar {
+    width: 12px; /* Largeur de la barre de défilement */
+    height: 12px; /* Hauteur de la barre de défilement */
+  }
+  
+  .player-list::-webkit-scrollbar-track {
+    background-color: #f2f2f2; /* Couleur de la zone non recouverte par la poignée de défilement */
+    border-radius: 6px; /* Arrondir les coins de la zone de la barre de défilement */
+  }
+  
+  .player-list::-webkit-scrollbar-thumb {
+    background-color: #aaa; /* Couleur de la poignée de défilement */
+    border-radius: 6px; /* Arrondir les coins de la poignée de défilement */
+  }
+  
+  .player-list::-webkit-scrollbar-button {
+    background-color: #ccc; /* Couleur des boutons de la barre de défilement */
+    border-radius: 6px; /* Arrondir les coins des boutons de la barre de défilement */
+  }
+  
+  
+  .player {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: calc(50% - 10px); /* Modifier la propriété width */
+    /* Ajouter des styles pour la taille, la couleur, etc. */
+  }
+  
+  .player img {
+    width: 50px;
+    margin-right: 10px;
+    /* Ajouter des styles pour la taille, la couleur, etc. */
+  }
+  
+  .player span {
+    font-weight: bold;
+    /* Ajouter des styles pour la taille, la couleur, etc. */
+  }
+  
+  .right {
+    width: 50%;
+    background-color: rgba(230, 230, 230, 0.5);
+    padding: 20px;
+  }
+  
+  .player-item {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+  }
