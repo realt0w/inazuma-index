@@ -9,8 +9,13 @@ playerItems.forEach(function(playerItem, index) {
     let playerDiv = document.createElement("div"); // Créer une div parent
     playerDiv.classList.add("player-div"); // Ajouter une classe pour la div
     
+    let playerDiv2 = document.createElement("div"); // Créer une div parent
+    playerDiv2.classList.add("player-div2"); // Ajouter une classe pour la div
+
     let playerImg = document.createElement("img");
     playerImg.src = playerItem.querySelector("img").src;
+    playerImg.style.width = "50px";
+    playerImg.style.height = "auto";
     playerDiv.appendChild(playerImg); // Ajouter l'image à la div parent
     
     let playerGender = document.createElement("img");
@@ -72,7 +77,16 @@ playerItems.forEach(function(playerItem, index) {
     let playerSM4 = document.createElement("p");
     playerSM4.textContent = players[index].SM4;
     
+    let playerTeamSprite = document.createElement("img");
+    playerTeamSprite.src = playerTeamSprite.src = players[index].TeamSprite;
+    playerDiv2.appendChild(playerTeamSprite); // Ajouter le Element du joueur à la div parent
+
+    let playerTeamName = document.createElement("text");
+    playerTeamName.textContent = players[index].Team;
+    playerDiv2.appendChild(playerTeamName); // Ajouter le nom du joueur à la div parent
+
     playerInfo.appendChild(playerDiv); // Ajouter la div parent contenant les éléments à playerInfo
+    playerInfo.appendChild(playerDiv2); // Ajouter la div parent contenant les éléments à playerInfo
     
 
     playerInfo.appendChild(playerImg);

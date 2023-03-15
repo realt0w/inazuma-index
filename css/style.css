@@ -3,6 +3,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
    }
    
    .container {
@@ -27,8 +28,10 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     height: calc(100% - 100px); /* La hauteur totale du conteneur moins la hauteur de la zone de boutons */
-    overflow-y: scroll; /* Ajouter la propriété overflow-y avec une valeur de scroll */
+    overflow-x: scroll; /* Cacher la scrollbar horizontale */
+    overflow-y: hidden; /* Afficher la scrollbar verticale */
   }
+  
   
   .player-list::-webkit-scrollbar {
     width: 12px; /* Largeur de la barre de défilement */
@@ -41,12 +44,13 @@ body {
   }
   
   .player-list::-webkit-scrollbar-thumb {
-    background-color: #aaa; /* Couleur de la poignée de défilement */
-    border-radius: 6px; /* Arrondir les coins de la poignée de défilement */
+    background-color: rgb(255, 204, 0); /* Set the scrollbar handle color to yellow */
+    border-radius: 6px; /* Rounded corners for the scrollbar handle */
   }
   
+  
   .player-list::-webkit-scrollbar-button {
-    background-color: #ccc; /* Couleur des boutons de la barre de défilement */
+    background-color: #ffa600; /* Couleur des boutons de la barre de défilement */
     border-radius: 6px; /* Arrondir les coins des boutons de la barre de défilement */
   }
   
@@ -72,7 +76,7 @@ body {
   
   .right {
     width: 50%;
-    background-color: rgba(230, 230, 230, 0.5);
+    background-color: rgba(230, 230, 230, 0.8);
     padding: 20px;
   }
   
@@ -81,3 +85,30 @@ body {
     padding: 5px;
     margin: 5px;
   }
+
+  .player-div2 img {
+    width: 5%;
+  }
+
+  .player-div2 {
+    display: flex;
+    align-items: center;
+  }
+
+/* Styles for mobile devices */
+@media (max-width: 767px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+    height: 50%;
+  }
+
+  .right {
+    width: 100%;
+    height: 50%;
+  }
+}

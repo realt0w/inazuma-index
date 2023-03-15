@@ -11,7 +11,7 @@ playerDiv.classList.add("player", "player-item"); // Ajoutez la classe "player-i
   playerImg.src = player.Sprite;
 
   let playerName = document.createElement("span");
-  playerName.textContent = player.Nickname;
+  playerName.textContent = player.Name + " - " + player.Nickname;
 
   playerDiv.appendChild(playerImg);
   playerDiv.appendChild(playerName);

@@ -143,6 +143,60 @@ const special_moves = {
         element: "Wood",
         type: "Shoot",
     },
+    25: {
+        name: "Spiral Shot", // IE 1
+        TP: 20,
+        element: "Wind",
+        type: "Shoot",
+    },
+    26: {
+        name: "Illusion Ball", // IE 1
+        TP: 23,
+        element: "Wood",
+        type: "Dribble",
+    },
+    27: {
+        name: "Back Tornado", // IE 1
+        TP: 35,
+        element: "Wind",
+        type: "Shoot",
+    },
+    28: {
+        name: "Rolling Kick", // IE 1
+        TP: 17,
+        element: "Wood",
+        type: "Shoot",
+    },
+    29: {
+        name: "Zigzag Spark", // IE 1
+        TP: 23,
+        element: "Wind",
+        type: "Dribble",
+    },
+    30: {
+        name: "Cyclone", // IE 1
+        TP: 32,
+        element: "Wind",
+        type: "Block",
+    },
+    31: {
+        name: "Freeze Shot", // IE 1
+        TP: 33,
+        element: "Wood",
+        type: "Shoot",
+    },
+    32: {
+        name: "Bewildered", // IE 1
+        TP: 23,
+        element: "Earth",
+        type: "Dribble",
+    },
+    33: {
+        name: "Fake Ball", // IE 1
+        TP: 25,
+        element: "Wood",
+        type: "Block",
+    },
     // Add more special moves here
 };
 
