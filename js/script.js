@@ -26,6 +26,9 @@ const teamsSelect = document.getElementById("teams");
 const elementsSelect = document.getElementById("elements");
 const gendersSelect = document.getElementById("genders");
 const positionsSelect = document.getElementById("positions");
+const searchInput = document.getElementById("search");
+
+
 
 gamesSelect.addEventListener("change", function() {
   const selectedGame = this.value;
@@ -33,11 +36,15 @@ gamesSelect.addEventListener("change", function() {
   const selectedElement = elementsSelect.value;
   const selectedGender = gendersSelect.value;
   const selectedPosition = positionsSelect.value;
+  const searchValue = searchInput.value.toLowerCase(); // add search value here
 
   const playerItems = document.querySelectorAll(".player-item");
 
   playerItems.forEach(function(playerItem, index) {
-    if ((selectedGame === "all" || players[index].Game === selectedGame) &&
+    const playerName = playerItem.querySelector("span").textContent.toLowerCase();
+
+    if (playerName.includes(searchValue) && 
+        (selectedGame === "all" || players[index].Game === selectedGame) &&
         (selectedTeam === "all" || players[index].Team === selectedTeam) &&
         (selectedElement === "all" || players[index].Element === selectedElement) &&
         (selectedGender === "all" || players[index].Gender === selectedGender) &&
@@ -55,11 +62,15 @@ teamsSelect.addEventListener("change", function() {
   const selectedElement = elementsSelect.value;
   const selectedGender = gendersSelect.value;
   const selectedPosition = positionsSelect.value;
+  const searchValue = searchInput.value.toLowerCase(); // add search value here
 
   const playerItems = document.querySelectorAll(".player-item");
 
   playerItems.forEach(function(playerItem, index) {
-    if ((selectedGame === "all" || players[index].Game === selectedGame) &&
+    const playerName = playerItem.querySelector("span").textContent.toLowerCase();
+
+    if (playerName.includes(searchValue) && 
+        (selectedGame === "all" || players[index].Game === selectedGame) &&
         (selectedTeam === "all" || players[index].Team === selectedTeam) &&
         (selectedElement === "all" || players[index].Element === selectedElement) &&
         (selectedGender === "all" || players[index].Gender === selectedGender) &&
@@ -77,11 +88,15 @@ elementsSelect.addEventListener("change", function() {
   const selectedTeam = teamsSelect.value;
   const selectedGender = gendersSelect.value;
   const selectedPosition = positionsSelect.value;
+  const searchValue = searchInput.value.toLowerCase(); // add search value here
 
   const playerItems = document.querySelectorAll(".player-item");
 
   playerItems.forEach(function(playerItem, index) {
-    if ((selectedGame === "all" || players[index].Game === selectedGame) &&
+    const playerName = playerItem.querySelector("span").textContent.toLowerCase();
+
+    if (playerName.includes(searchValue) && 
+        (selectedGame === "all" || players[index].Game === selectedGame) &&
         (selectedTeam === "all" || players[index].Team === selectedTeam) &&
         (selectedElement === "all" || players[index].Element === selectedElement) &&
         (selectedGender === "all" || players[index].Gender === selectedGender) &&
@@ -99,11 +114,15 @@ gendersSelect.addEventListener("change", function() {
   const selectedTeam = teamsSelect.value;
   const selectedElement = elementsSelect.value;
   const selectedPosition = positionsSelect.value;
+  const searchValue = searchInput.value.toLowerCase(); // add search value here
 
   const playerItems = document.querySelectorAll(".player-item");
 
   playerItems.forEach(function(playerItem, index) {
-    if ((selectedGame === "all" || players[index].Game === selectedGame) &&
+    const playerName = playerItem.querySelector("span").textContent.toLowerCase();
+
+    if (playerName.includes(searchValue) && 
+        (selectedGame === "all" || players[index].Game === selectedGame) &&
         (selectedTeam === "all" || players[index].Team === selectedTeam) &&
         (selectedElement === "all" || players[index].Element === selectedElement) &&
         (selectedGender === "all" || players[index].Gender === selectedGender) &&
@@ -115,8 +134,10 @@ gendersSelect.addEventListener("change", function() {
   });
 });
 
+
 positionsSelect.addEventListener("change", function() {
   const selectedPosition = this.value;
+  const searchValue = searchInput.value.toLowerCase();
   const selectedGame = gamesSelect.value;
   const selectedTeam = teamsSelect.value;
   const selectedElement = elementsSelect.value;
@@ -125,7 +146,37 @@ positionsSelect.addEventListener("change", function() {
   const playerItems = document.querySelectorAll(".player-item");
 
   playerItems.forEach(function(playerItem, index) {
-    if ((selectedGame === "all" || players[index].Game === selectedGame) &&
+    const playerName = playerItem.querySelector("span").textContent.toLowerCase();
+
+    if (playerName.includes(searchValue) &&
+        (selectedGame === "all" || players[index].Game === selectedGame) &&
+        (selectedTeam === "all" || players[index].Team === selectedTeam) &&
+        (selectedElement === "all" || players[index].Element === selectedElement) &&
+        (selectedGender === "all" || players[index].Gender === selectedGender) &&
+        (selectedPosition === "all" || players[index].Position === selectedPosition)) {
+      playerItem.style.display = "block";
+    } else {
+      playerItem.style.display = "none";
+    }
+  });
+});
+
+
+
+searchInput.addEventListener("input", function() {
+  const searchValue = this.value.toLowerCase();
+  const selectedGame = gamesSelect.value;
+  const selectedTeam = teamsSelect.value;
+  const selectedElement = elementsSelect.value;
+  const selectedGender = gendersSelect.value;
+  const selectedPosition = positionsSelect.value;
+  const playerItems = document.querySelectorAll(".player-item");
+
+  playerItems.forEach(function(playerItem, index) {
+    const playerName = playerItem.querySelector("span").textContent.toLowerCase();
+
+    if (playerName.includes(searchValue) &&
+    (selectedGame === "all" || players[index].Game === selectedGame) &&
         (selectedTeam === "all" || players[index].Team === selectedTeam) &&
         (selectedElement === "all" || players[index].Element === selectedElement) &&
         (selectedGender === "all" || players[index].Gender === selectedGender) &&
