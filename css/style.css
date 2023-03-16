@@ -18,6 +18,31 @@ body {
     padding: 20px;
   }
   
+  .right {
+    width: 50%;
+    background-color: rgba(230, 230, 230, 0.8);
+    padding: 20px;
+  }
+  
+  /* Styles for mobile devices */
+  @media (max-width: 767px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .left {
+      width: 100%;
+      height: 50%;
+      order: 2;
+    }
+  
+    .right {
+      width: 100%;
+      height: 50%;
+      order: 1;
+    }
+  }
+  
   .button-area {
     height: 50px;
     /* Ajouter des styles pour l'espacement, les couleurs, etc. */
@@ -74,41 +99,17 @@ body {
     /* Ajouter des styles pour la taille, la couleur, etc. */
   }
   
-  .right {
-    width: 50%;
-    background-color: rgba(230, 230, 230, 0.8);
-    padding: 20px;
-  }
-  
   .player-item {
     border: 1px solid black;
     padding: 5px;
     margin: 5px;
   }
 
-  .player-div2 img {
+  .player-divTeam img {
     width: 5%;
   }
 
-  .player-div2 {
+  .player-divTeam {
     display: flex;
     align-items: center;
   }
-
-/* Styles for mobile devices */
-@media (max-width: 767px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .left {
-    width: 100%;
-    height: 50%;
-  }
-
-  .right {
-    width: 100%;
-    height: 50%;
-  }
-}

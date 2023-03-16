@@ -6,107 +6,195 @@ playerItems.forEach(function(playerItem, index) {
     let playerInfo = document.querySelector(".player-info");
     playerInfo.innerHTML = "";
 
+    // Create Div Team
+    let playerDivTeam = document.createElement("div"); // Créer une div parent
+    playerDivTeam.classList.add("player-divTeam"); // Ajouter une classe pour la div
+    playerInfo.appendChild(playerDivTeam); // Ajouter la div parent contenant les éléments à playerInfo
+
+    // Create Div 1
     let playerDiv = document.createElement("div"); // Créer une div parent
     playerDiv.classList.add("player-div"); // Ajouter une classe pour la div
-    
-    let playerDiv2 = document.createElement("div"); // Créer une div parent
-    playerDiv2.classList.add("player-div2"); // Ajouter une classe pour la div
+    playerInfo.appendChild(playerDiv); // Ajouter la div parent contenant les éléments à playerInfo
 
+    // Create Div Desc
+    let playerDivDesc = document.createElement("div"); // Créer une div parent
+    playerDivDesc.classList.add("player-divDesc"); // Ajouter une classe pour la div
+    playerInfo.appendChild(playerDivDesc); // Ajouter la div parent contenant les éléments à playerInfo
+
+    // Create Div Kick FP TP
+    let playerDivKickTP = document.createElement("div"); // Créer une div parent
+    playerDivKickTP.classList.add("player-divKickTP"); // Ajouter une classe pour la div
+    playerDivKickTP.style.marginBottom = "10px";
+    playerInfo.appendChild(playerDivKickTP); // Ajouter la div parent contenant les éléments à playerInfo
+
+    // Create Div Body & SM1
+    let playerDivBodySM1 = document.createElement("div"); // Créer une div parent
+    playerDivBodySM1.classList.add("player-divBodySM1"); // Ajouter une classe pour la div
+    playerDivBodySM1.style.marginBottom = "10px";
+    playerInfo.appendChild(playerDivBodySM1); // Ajouter la div parent contenant les éléments à playerInfo
+    
+    // Create Div Control & SM2
+    let playerDivControlSM2 = document.createElement("div"); // Créer une div parent
+    playerDivControlSM2.classList.add("player-divControlSM2"); // Ajouter une classe pour la div
+    playerDivControlSM2.style.marginBottom = "10px";
+    playerInfo.appendChild(playerDivControlSM2); // Ajouter la div parent contenant les éléments à playerInfo
+        
+    // Create Div Guard & SM3
+    let playerDivGuardSM3 = document.createElement("div"); // Créer une div parent
+    playerDivGuardSM3.classList.add("player-divGuardSM3"); // Ajouter une classe pour la div
+    playerDivGuardSM3.style.marginBottom = "10px";
+    playerInfo.appendChild(playerDivGuardSM3); // Ajouter la div parent contenant les éléments à playerInfo        
+    
+    // Create Div Speed & SM4
+    let playerDivSpeedSM4 = document.createElement("div"); // Créer une div parent
+    playerDivSpeedSM4.classList.add("player-divSpeedSM4"); // Ajouter une classe pour la div
+    playerDivSpeedSM4.style.marginBottom = "10px";
+    playerInfo.appendChild(playerDivSpeedSM4); // Ajouter la div parent contenant les éléments à playerInfo 
+
+    // Create Div Stamina
+    let playerDivStamina = document.createElement("div"); // Créer une div parent
+    playerDivStamina.classList.add("player-divStamina"); // Ajouter une classe pour la div
+    playerDivStamina.style.marginBottom = "10px";
+    playerInfo.appendChild(playerDivStamina); // Ajouter la div parent contenant les éléments à playerInfo
+
+    // Create Div Guts
+    let playerDivGuts = document.createElement("div"); // Créer une div parent
+    playerDivGuts.classList.add("player-divGuts"); // Ajouter une classe pour la div
+    playerDivGuts.style.marginBottom = "10px";
+    playerInfo.appendChild(playerDivGuts); // Ajouter la div parent contenant les éléments à playerInfo
+
+
+    //  Player Sprite
     let playerImg = document.createElement("img");
     playerImg.src = playerItem.querySelector("img").src;
+    playerImg.style.marginRight = "5px";
     playerImg.style.width = "50px";
     playerImg.style.height = "auto";
     playerDiv.appendChild(playerImg); // Ajouter l'image à la div parent
-    
-    let playerGender = document.createElement("img");
-    playerGender.src = playerGender.src = players[index].Gender;
-    playerDiv.appendChild(playerGender); // Ajouter le genre du joueur à la div parent
 
-    let playerElement = document.createElement("img");
-    playerElement.src = playerElement.src = players[index].Element;
-    playerDiv.appendChild(playerElement); // Ajouter le Element du joueur à la div parent
-    
-    let playerPosition = document.createElement("img");
-    playerPosition.src = playerPosition.src = players[index].Position;
-    playerDiv.appendChild(playerPosition); // Ajouter le Position du joueur à la div parent
-
-    let playerName = document.createElement("h2");
-    playerName.textContent = playerItem.querySelector("span").textContent;
+    // Player Name
+    let playerName = document.createElement("text");
+    playerName.textContent = players[index].Name + " - " + players[index].Nickname; 
     playerDiv.appendChild(playerName); // Ajouter le nom du joueur à la div parent
 
+
+    // Player Description
     let playerDescription = document.createElement("p");
     playerDescription.textContent = players[index].Description;
-    
-    // Ajouter les autres éléments au bloc parent
-    let playerKick = document.createElement("p");
+    playerDivDesc.appendChild(playerDescription); // Ajouter le nom du joueur à la div parent
+
+    // Player Kick
+    let playerKick = document.createElement("text");
     playerKick.textContent = "Kick: " + players[index].Kick;
-    
-    let playerBody = document.createElement("p");
-    playerBody.textContent = "Body: " + players[index].Body;
-    
-    let playerControl = document.createElement("p");
-    playerControl.textContent = "Control: " + players[index].Control;
-    
-    let playerGuard = document.createElement("p");
-    playerGuard.textContent = "Guard: " + players[index].Guard;
-    
-    let playerSpeed = document.createElement("p");
-    playerSpeed.textContent = "Speed: " + players[index].Speed;
-    
-    let playerStamina = document.createElement("p");
-    playerStamina.textContent = "Stamina: " + players[index].Stamina;
-    
-    let playerGuts = document.createElement("p");
-    playerGuts.textContent = "Guts: " + players[index].Guts;
+    playerKick.style.marginRight = "60px";
+    playerDivKickTP.appendChild(playerKick);
 
-    let playerFP = document.createElement("p");
+
+    // Player FP
+    let playerFP = document.createElement("text");
     playerFP.textContent = "FP: " + players[index].FP;
+    playerFP.style.marginRight = "50px";
+    playerDivKickTP.appendChild(playerFP);
 
-    let playerTP = document.createElement("p");
+
+    // Player TP
+    let playerTP = document.createElement("text");
     playerTP.textContent = "TP: " + players[index].TP;
+    playerDivKickTP.appendChild(playerTP);
 
-    let playerSM1 = document.createElement("p");
+
+    // Player Body
+    let playerBody = document.createElement("text");
+    playerBody.textContent = "Body: " + players[index].Body;
+    playerBody.style.marginRight = "50px";
+    playerDivBodySM1.appendChild(playerBody);
+
+
+    // Player SM1
+    let playerSM1 = document.createElement("text");
     playerSM1.textContent = players[index].SM1;
-
-    let playerSM2 = document.createElement("p");
-    playerSM2.textContent = players[index].SM2;
-
-    let playerSM3 = document.createElement("p");
-    playerSM3.textContent = players[index].SM3;
-
-    let playerSM4 = document.createElement("p");
-    playerSM4.textContent = players[index].SM4;
+    playerDivBodySM1.appendChild(playerSM1);
     
+
+    // Player Control
+    let playerControl = document.createElement("text");
+    playerControl.textContent = "Control: " + players[index].Control;
+    playerControl.style.marginRight = "35px";
+    playerDivControlSM2.appendChild(playerControl);
+    
+
+    // Player SM2
+    let playerSM2 = document.createElement("text");
+    playerSM2.textContent = players[index].SM2;
+    playerDivControlSM2.appendChild(playerSM2);
+
+
+    // Player Guard
+    let playerGuard = document.createElement("text");
+    playerGuard.textContent = "Guard: " + players[index].Guard;
+    playerGuard.style.marginRight = "45px";
+    playerDivGuardSM3.appendChild(playerGuard);
+
+
+    // Player SM3
+    let playerSM3 = document.createElement("text");
+    playerSM3.textContent = players[index].SM3;
+    playerDivGuardSM3.appendChild(playerSM3);
+    
+
+    // Player Speed
+    let playerSpeed = document.createElement("text");
+    playerSpeed.textContent = "Speed: " + players[index].Speed;
+    playerSpeed.style.marginRight = "45px";
+    playerDivSpeedSM4.appendChild(playerSpeed);
+
+
+    // Player SM4
+    let playerSM4 = document.createElement("text");
+    playerSM4.textContent = players[index].SM4;
+    playerDivSpeedSM4.appendChild(playerSM4);
+    
+
+    // Player Stamina
+    let playerStamina = document.createElement("text");
+    playerStamina.textContent = "Stamina: " + players[index].Stamina;
+    playerDivStamina.appendChild(playerStamina);
+    
+
+    // Player Guts
+    let playerGuts = document.createElement("text");
+    playerGuts.textContent = "Guts: " + players[index].Guts;
+    playerDivGuts.appendChild(playerGuts);
+    
+
+    // Player Team Sprite
     let playerTeamSprite = document.createElement("img");
     playerTeamSprite.src = playerTeamSprite.src = players[index].TeamSprite;
-    playerDiv2.appendChild(playerTeamSprite); // Ajouter le Element du joueur à la div parent
+    playerTeamSprite.style.marginRight = "5px";
+    playerDivTeam.appendChild(playerTeamSprite); // Ajouter le Element du joueur à la div parent
 
+
+    // Player Team Name
     let playerTeamName = document.createElement("text");
     playerTeamName.textContent = players[index].Team;
-    playerDiv2.appendChild(playerTeamName); // Ajouter le nom du joueur à la div parent
+    playerTeamName.style.marginRight = "5px";
+    playerDivTeam.appendChild(playerTeamName); // Ajouter le nom du joueur à la div parent
 
-    playerInfo.appendChild(playerDiv); // Ajouter la div parent contenant les éléments à playerInfo
-    playerInfo.appendChild(playerDiv2); // Ajouter la div parent contenant les éléments à playerInfo
+    // Player Gender
+    let playerGender = document.createElement("img");
+    playerGender.src = playerGender.src = players[index].Gender;
+    playerDivTeam.appendChild(playerGender); // Ajouter le genre du joueur à la div parent
+
+
+    // Player Element
+    let playerElement = document.createElement("img");
+    playerElement.src = playerElement.src = players[index].Element;
+    playerDivTeam.appendChild(playerElement); // Ajouter le Element du joueur à la div parent
     
 
-    playerInfo.appendChild(playerImg);
-    playerInfo.appendChild(playerGender);
-    playerInfo.appendChild(playerElement);
-    playerInfo.appendChild(playerPosition);
-    playerInfo.appendChild(playerName);
-    playerInfo.appendChild(playerDescription);
-    playerInfo.appendChild(playerKick);
-    playerInfo.appendChild(playerBody);
-    playerInfo.appendChild(playerControl);
-    playerInfo.appendChild(playerGuard);
-    playerInfo.appendChild(playerSpeed);
-    playerInfo.appendChild(playerStamina);
-    playerInfo.appendChild(playerGuts);
-    playerInfo.appendChild(playerFP);
-    playerInfo.appendChild(playerTP);
-    playerInfo.appendChild(playerSM1);
-    playerInfo.appendChild(playerSM2);
-    playerInfo.appendChild(playerSM3);
-    playerInfo.appendChild(playerSM4);
+    // Player Position
+    let playerPosition = document.createElement("img");
+    playerPosition.src = playerPosition.src = players[index].Position;
+    playerDivTeam.appendChild(playerPosition); // Ajouter le Position du joueur à la div parent
   });
 });
