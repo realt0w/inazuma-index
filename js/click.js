@@ -9,58 +9,68 @@ playerItems.forEach(function(playerItem, index) {
     // Create Div Team
     let playerDivTeam = document.createElement("div"); // Créer une div parent
     playerDivTeam.classList.add("player-divTeam"); // Ajouter une classe pour la div
+    playerDivTeam.style.fontFamily = "InazumaNormal";
     playerInfo.appendChild(playerDivTeam); // Ajouter la div parent contenant les éléments à playerInfo
 
     // Create Div 1
     let playerDiv = document.createElement("div"); // Créer une div parent
     playerDiv.classList.add("player-div"); // Ajouter une classe pour la div
+    playerDiv.style.fontFamily = "InazumaNormal";
     playerInfo.appendChild(playerDiv); // Ajouter la div parent contenant les éléments à playerInfo
 
     // Create Div Desc
     let playerDivDesc = document.createElement("div"); // Créer une div parent
     playerDivDesc.classList.add("player-divDesc"); // Ajouter une classe pour la div
+    playerDivDesc.style.fontFamily = "InazumaNormal";
     playerInfo.appendChild(playerDivDesc); // Ajouter la div parent contenant les éléments à playerInfo
 
     // Create Div Kick FP TP
     let playerDivKickTP = document.createElement("div"); // Créer une div parent
     playerDivKickTP.classList.add("player-divKickTP"); // Ajouter une classe pour la div
     playerDivKickTP.style.marginBottom = "10px";
+    playerDivKickTP.style.fontFamily = "InazumaNormal";
     playerInfo.appendChild(playerDivKickTP); // Ajouter la div parent contenant les éléments à playerInfo
 
     // Create Div Body & SM1
     let playerDivBodySM1 = document.createElement("div"); // Créer une div parent
     playerDivBodySM1.classList.add("player-divBodySM1"); // Ajouter une classe pour la div
     playerDivBodySM1.style.marginBottom = "10px";
+    playerDivBodySM1.style.fontFamily = "InazumaNormal";
     playerInfo.appendChild(playerDivBodySM1); // Ajouter la div parent contenant les éléments à playerInfo
     
     // Create Div Control & SM2
     let playerDivControlSM2 = document.createElement("div"); // Créer une div parent
     playerDivControlSM2.classList.add("player-divControlSM2"); // Ajouter une classe pour la div
     playerDivControlSM2.style.marginBottom = "10px";
+    playerDivControlSM2.style.fontFamily = "InazumaNormal";
     playerInfo.appendChild(playerDivControlSM2); // Ajouter la div parent contenant les éléments à playerInfo
         
     // Create Div Guard & SM3
     let playerDivGuardSM3 = document.createElement("div"); // Créer une div parent
     playerDivGuardSM3.classList.add("player-divGuardSM3"); // Ajouter une classe pour la div
     playerDivGuardSM3.style.marginBottom = "10px";
+    playerDivGuardSM3.style.fontFamily = "InazumaNormal";
     playerInfo.appendChild(playerDivGuardSM3); // Ajouter la div parent contenant les éléments à playerInfo        
     
     // Create Div Speed & SM4
     let playerDivSpeedSM4 = document.createElement("div"); // Créer une div parent
     playerDivSpeedSM4.classList.add("player-divSpeedSM4"); // Ajouter une classe pour la div
     playerDivSpeedSM4.style.marginBottom = "10px";
+    playerDivSpeedSM4.style.fontFamily = "InazumaNormal";
     playerInfo.appendChild(playerDivSpeedSM4); // Ajouter la div parent contenant les éléments à playerInfo 
 
     // Create Div Stamina
     let playerDivStamina = document.createElement("div"); // Créer une div parent
     playerDivStamina.classList.add("player-divStamina"); // Ajouter une classe pour la div
     playerDivStamina.style.marginBottom = "10px";
+    playerDivStamina.style.fontFamily = "InazumaNormal";
     playerInfo.appendChild(playerDivStamina); // Ajouter la div parent contenant les éléments à playerInfo
 
     // Create Div Guts
     let playerDivGuts = document.createElement("div"); // Créer une div parent
     playerDivGuts.classList.add("player-divGuts"); // Ajouter une classe pour la div
     playerDivGuts.style.marginBottom = "10px";
+    playerDivGuts.style.fontFamily = "InazumaNormal";
     playerInfo.appendChild(playerDivGuts); // Ajouter la div parent contenant les éléments à playerInfo
 
 
