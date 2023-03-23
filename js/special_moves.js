@@ -197,6 +197,30 @@ const special_moves = {
         element: "Wood",
         type: "Block",
     },
+    34: {
+        name: "Twin Boost", // IE 1
+        TP: 44,
+        element: "Fire",
+        type: "Shoot",
+    },
+    35: {
+        name: "Rolling Hell", // IE 1
+        TP: 38,
+        element: "Earth",
+        type: "Dribble",
+    },
+    36: {
+        name: "Dragon Crash", // IE 1
+        TP: 33,
+        element: "Wood",
+        type: "Shoot",
+    },
+    37: {
+        name: "Dragon Tornado", // IE 1
+        TP: 51,
+        element: "Fire",
+        type: "Shoot",
+    },
     // Add more special moves here
 };
 
