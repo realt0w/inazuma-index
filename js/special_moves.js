@@ -221,6 +221,42 @@ const special_moves = {
         element: "Fire",
         type: "Shoot",
     },
+    38: {
+        name: "Fire Tornado", // IE 1
+        TP: 33,
+        element: "Fire",
+        type: "Shoot",
+    },
+    39: {
+        name: "Inazuma Drop", // IE 1
+        TP: 44,
+        element: "Wind",
+        type: "Shoot",
+    },
+    40: {
+        name: "Heat Tackle", // IE 1
+        TP: 23,
+        element: "Fire",
+        type: "Dribble",
+    },
+    41: {
+        name: "Killer Slide", // IE 1
+        TP: 10,
+        element: "Wood",
+        type: "Block",
+    },
+    42: {
+        name: "Blade Attack", // IE 1
+        TP: 23,
+        element: "Wind",
+        type: "Block",
+    },
+    43: {
+        name: "Hurricane Arrow", // IE 1
+        TP: 45,
+        element: "Wind",
+        type: "Block",
+    },
     // Add more special moves here
 };
 
