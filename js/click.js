@@ -36,6 +36,8 @@ playerItems.forEach(function(playerItem, index) {
     playerDivBodySM1.classList.add("player-divBodySM1"); // Ajouter une classe pour la div
     playerDivBodySM1.style.marginBottom = "10px";
     playerDivBodySM1.style.fontFamily = "InazumaNormal";
+    playerDivBodySM1.style.display = "flex";
+    playerDivBodySM1.style.alignItems = "center"; // n'est pas appliqué à cause de display = "block" dans des divs parents
     playerInfo.appendChild(playerDivBodySM1); // Ajouter la div parent contenant les éléments à playerInfo
     
     // Create Div Control & SM2
@@ -43,6 +45,8 @@ playerItems.forEach(function(playerItem, index) {
     playerDivControlSM2.classList.add("player-divControlSM2"); // Ajouter une classe pour la div
     playerDivControlSM2.style.marginBottom = "10px";
     playerDivControlSM2.style.fontFamily = "InazumaNormal";
+    playerDivControlSM2.style.display = "flex";
+    playerDivControlSM2.style.alignItems = "center"; // n'est pas appliqué à cause de display = "block" dans des divs parents
     playerInfo.appendChild(playerDivControlSM2); // Ajouter la div parent contenant les éléments à playerInfo
         
     // Create Div Guard & SM3
@@ -50,6 +54,8 @@ playerItems.forEach(function(playerItem, index) {
     playerDivGuardSM3.classList.add("player-divGuardSM3"); // Ajouter une classe pour la div
     playerDivGuardSM3.style.marginBottom = "10px";
     playerDivGuardSM3.style.fontFamily = "InazumaNormal";
+    playerDivGuardSM3.style.display = "flex";
+    playerDivGuardSM3.style.alignItems = "center"; // n'est pas appliqué à cause de display = "block" dans des divs parents
     playerInfo.appendChild(playerDivGuardSM3); // Ajouter la div parent contenant les éléments à playerInfo        
     
     // Create Div Speed & SM4
@@ -57,6 +63,8 @@ playerItems.forEach(function(playerItem, index) {
     playerDivSpeedSM4.classList.add("player-divSpeedSM4"); // Ajouter une classe pour la div
     playerDivSpeedSM4.style.marginBottom = "10px";
     playerDivSpeedSM4.style.fontFamily = "InazumaNormal";
+    playerDivSpeedSM4.style.display = "flex";
+    playerDivSpeedSM4.style.alignItems = "center"; // n'est pas appliqué à cause de display = "block" dans des divs parents
     playerInfo.appendChild(playerDivSpeedSM4); // Ajouter la div parent contenant les éléments à playerInfo 
 
     // Create Div Stamina
@@ -119,12 +127,38 @@ playerItems.forEach(function(playerItem, index) {
     playerBody.style.marginRight = "50px";
     playerDivBodySM1.appendChild(playerBody);
 
+    const techniqueNoeud = (technique) => {
+      // au cas où la technique a été simplement définie par une chaine de caractère
+      if (typeof technique === "string") {
+        const playerSM = document.createElement("text");
+        playerSM.textContent = technique;
+
+        return playerSM;
+      }
+
+      // dans le cas normal où une technique est un objet
+      const playerSM = document.createElement("div");
+      
+      const techniqueElement = document.createElement("img");
+      techniqueElement.src = "./images/elements/" + technique.element + ".png";
+      techniqueElement.style.marginRight = "5px";
+      playerSM.appendChild(techniqueElement);
+
+      playerSM.appendChild(document.createTextNode(technique.name + " (" + technique.TP + " TP)"))
+
+      const techniqueType = document.createElement("img");
+      techniqueType.src = "./images/types/" + technique.type + ".png";
+      techniqueType.style.marginLeft = "5px";
+      techniqueType.style.height = "24px";
+      techniqueType.style.width = "36px";
+      playerSM.appendChild(techniqueType);
+
+      return playerSM;
+    }
 
     // Player SM1
-    let playerSM1 = document.createElement("text");
-    playerSM1.textContent = players[index].SM1;
+    const playerSM1 = techniqueNoeud(players[index].SM1)
     playerDivBodySM1.appendChild(playerSM1);
-    
 
     // Player Control
     let playerControl = document.createElement("text");
@@ -134,8 +168,7 @@ playerItems.forEach(function(playerItem, index) {
     
 
     // Player SM2
-    let playerSM2 = document.createElement("text");
-    playerSM2.textContent = players[index].SM2;
+    const playerSM2 = techniqueNoeud(players[index].SM2)
     playerDivControlSM2.appendChild(playerSM2);
 
 
@@ -147,8 +180,7 @@ playerItems.forEach(function(playerItem, index) {
 
 
     // Player SM3
-    let playerSM3 = document.createElement("text");
-    playerSM3.textContent = players[index].SM3;
+    const playerSM3 = techniqueNoeud(players[index].SM3)
     playerDivGuardSM3.appendChild(playerSM3);
     
 
@@ -160,8 +192,7 @@ playerItems.forEach(function(playerItem, index) {
 
 
     // Player SM4
-    let playerSM4 = document.createElement("text");
-    playerSM4.textContent = players[index].SM4;
+    const playerSM4 = techniqueNoeud(players[index].SM4)
     playerDivSpeedSM4.appendChild(playerSM4);
     
 

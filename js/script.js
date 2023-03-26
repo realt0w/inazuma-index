@@ -3,8 +3,8 @@ let playerList = document.querySelector(".player-list");
 players.forEach(function(player) {
     
 let playerDiv = document.createElement("div");
-playerDiv.classList.add("player", "player-item"); // Ajoutez la classe "player-item"
-playerDiv.style.fontFamily = "InazumaItalicBold";
+  playerDiv.classList.add("player", "player-item"); // Ajoutez la classe "player-item"
+  playerDiv.style.fontFamily = "InazumaItalicBold";
 
 
 
