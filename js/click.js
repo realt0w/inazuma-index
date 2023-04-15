@@ -92,7 +92,7 @@ playerItems.forEach(function(playerItem, index) {
 
     // Player Name
     let playerName = document.createElement("text");
-    playerName.textContent = players[index].Name + " - " + players[index].Nickname; 
+    playerName.textContent = players[index].Name + " - " + players[index].Nickname + " (" + players[index].Game + ") "; 
     playerDiv.appendChild(playerName); // Ajouter le nom du joueur à la div parent
 
 

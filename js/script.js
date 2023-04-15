@@ -12,7 +12,7 @@ let playerDiv = document.createElement("div");
   playerImg.src = player.Sprite;
 
   let playerName = document.createElement("span");
-  playerName.textContent = player.Name + " - " + player.Nickname;
+  playerName.textContent = player.Name + " - " + player.Nickname + " (" + player.Game + ") ";
 
   playerDiv.appendChild(playerImg);
   playerDiv.appendChild(playerName);

@@ -257,6 +257,84 @@ const special_moves = {
         element: "Wind",
         type: "Block",
     },
+    44: {
+        name: "Spinning Shot", // IE 1
+        TP: 15,
+        element: "Wind",
+        type: "Shoot",
+    },
+    45: {
+        name: "Spinning Cut", // IE 1
+        TP: 30,
+        element: "Wind",
+        type: "Block",
+    },
+    46: {
+        name: "The Phoenix", // IE 1
+        TP: 70,
+        element: "Fire",
+        type: "Shoot",
+    },
+    47: {
+        name: "Defence Scan", // IE 1
+        TP: 22,
+        element: "Wood",
+        type: "Block",
+    },
+    48: {
+        name: "Attack Scan", // IE 1
+        TP: 22,
+        element: "Wood",
+        type: "Dribble",
+    },
+    49: {
+        name: "Divine Arrows", // IE 1
+        TP: 56,
+        element: "Wind",
+        type: "Shoot",
+    },
+    50: {
+        name: "Killer Blade", // IE 1
+        TP: 17,
+        element: "Wood",
+        type: "Catch",
+    },
+    51: {
+        name: "Warp Space", // IE 1
+        TP: 17,
+        element: "Wood",
+        type: "Catch",
+    },
+    52: {
+        name: "Whirlwind", // IE 1
+        TP: 34,
+        element: "Wind",
+        type: "Catch",
+    },
+    53: {
+        name: "Fireball Knuckle", // IE 1
+        TP: 17,
+        element: "Fire",
+        type: "Catch",
+    },
+    54: {
+        name: "Rocket Kobushi", // IE 1
+        TP: 27,
+        element: "Fire",
+        type: "Catch",
+    },
+    55: {
+        name: "Blazing Knuckle", // IE 1
+        TP: 36,
+        element: "Fire",
+        type: "Catch",
+    },
+    56: {
+        name: "Counter Strike", // IE 1
+        TP: 43,
+        element: "Fire",
+        type: "Catch",
+    },
     // Add more special moves here
 };
 
