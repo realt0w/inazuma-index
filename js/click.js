@@ -138,6 +138,7 @@ playerItems.forEach(function(playerItem, index) {
 
       // dans le cas normal où une technique est un objet
       const playerSM = document.createElement("div");
+      playerSM.classList.add("element-technique"); // Ajouter une classe pour la div
       
       const techniqueElement = document.createElement("img");
       techniqueElement.src = "./images/elements/" + technique.element + ".png";
@@ -149,8 +150,6 @@ playerItems.forEach(function(playerItem, index) {
       const techniqueType = document.createElement("img");
       techniqueType.src = "./images/types/" + technique.type + ".png";
       techniqueType.style.marginLeft = "5px";
-      techniqueType.style.height = "24px";
-      techniqueType.style.width = "36px";
       playerSM.appendChild(techniqueType);
 
       return playerSM;

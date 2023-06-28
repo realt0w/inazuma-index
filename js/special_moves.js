@@ -335,6 +335,42 @@ const special_moves = {
         element: "Fire",
         type: "Catch",
     },
+    57: {
+        name: "Ghost Pull", // IE 1
+        TP: 17,
+        element: "Wood",
+        type: "Block",
+    },
+    58: {
+        name: "Teleport Shot", // IE 1
+        TP: 24,
+        element: "Earth",
+        type: "Shoot",
+    },
+    59: {
+        name: "Black Magic", // IE 1
+        TP: 17,
+        element: "Wood",
+        type: "Dribble",
+    },
+    60: {
+        name: "Phantom Shot", // IE 1
+        TP: 24,
+        element: "Wood",
+        type: "Shoot",
+    },
+    61: {
+        name: "Doppelganger", // IE 1
+        TP: 17,
+        element: "Wood",
+        type: "Block",
+    },
+    62: {
+        name: "Magic", // IE 1
+        TP: 17,
+        element: "Wood",
+        type: "Dribble",
+    },
     // Add more special moves here
 };
 
