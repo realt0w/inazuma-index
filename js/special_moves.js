@@ -371,6 +371,23 @@ const special_moves = {
         element: "Wood",
         type: "Dribble",
     },
+    63: {
+        name: "Poison Fog", // IE 1
+        TP: 17,
+        element: "Wind",
+        type: "Dribble",
+    },
+    64: {
+        name: "Spider Web", // IE 1
+        TP: 30,
+        element: "Wood",
+        type: "Block",
+    },
+    65: {
+        name: "Whirlwind Cut", // IE 1
+        TP: 30,
+        element: "Wind",
+        type: "Dribble",
+    },
     // Add more special moves here
 };
-
