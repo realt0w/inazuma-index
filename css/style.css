@@ -1,144 +1,172 @@
 body {
-    background-image: url("../images/Background.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    margin: 0;
-   }
-   
-   .container {
-    display: flex;
-    height: 100vh;
-    flex-direction: row;
-  }
-  
-  .left {
-    width: 50%;
-    background-color: rgba(242, 242, 242, 0.5);
-    padding: 1%;
-  }
-  
-  .right {
-    width: 50%;
-    background-color: rgba(230, 230, 230, 0.8);
-    padding: 1%;
-  }
+  background-image: url("../images/Background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  margin: 0;
+  cursor: url('../images/Cursor1.png'), auto;
+}
 
-  .button-area {
-    margin: 10px;
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+}
+
+.left {
+  width: 50%;
+  background-color: rgba(242, 242, 242, 0.5);
+}
+
+.right {
+  width: 50%;
+  background-color: rgba(230, 230, 230, 0.8);
+  padding: 1%;
+  border-left-width: 1px;
+  border-color: black;
+  border-left-style: solid;
+}
+
+.button-area {
+  margin: 10px;
+}
+
+.player-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: calc(100% - 100px);
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.player-list::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.player-list::-webkit-scrollbar-track {
+  background-color: #f2f2f2;
+  border-radius: 6px;
+}
+
+.player-list::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 204, 0);
+  border-radius: 6px;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  width: calc(40% - 10px);
+}
+
+.player img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.player span {
+  font-weight: bold;
+}
+
+.player-item {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+}
+
+.player-divTeam img {
+  width: 5%;
+}
+
+.player-divTeam {
+  display: flex;
+  align-items: center;
+}
+
+.element-technique img {
+  height: 24px;
+}
+
+@font-face {
+  font-family: InazumaNormal;
+  src: url(../fonts/InazumaNormal.otf);
+}
+
+@font-face {
+  font-family: InazumaItalic;
+  src: url(../fonts/InazumaItalic.otf);
+}
+
+@font-face {
+  font-family: InazumaItalicBold;
+  src: url(../fonts/InazumaItalicBold.otf);
+}
+
+@media (max-width: 767px) {
+  .container {
+      flex-direction: column;
   }
 
   .player-list {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: calc(100% - 100px); /* La hauteur totale du conteneur moins la hauteur de la zone de boutons */
-    overflow-x: scroll; /* Cacher la scrollbar horizontale */
-    overflow-y: hidden; /* Afficher la scrollbar verticale */
-  }
-  
-  
-  .player-list::-webkit-scrollbar {
-    width: 12px; /* Largeur de la barre de défilement */
-    height: 12px; /* Hauteur de la barre de défilement */
-  }
-  
-  .player-list::-webkit-scrollbar-track {
-    background-color: #f2f2f2; /* Couleur de la zone non recouverte par la poignée de défilement */
-    border-radius: 6px; /* Arrondir les coins de la zone de la barre de défilement */
-  }
-  
-  .player-list::-webkit-scrollbar-thumb {
-    background-color: rgb(255, 204, 0); /* Set the scrollbar handle color to yellow */
-    border-radius: 6px; /* Rounded corners for the scrollbar handle */
+      margin-top: 15px;
   }
 
-  
-  
-  .player {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    width: calc(50% - 10px); /* Modifier la propriété width */
-    /* Ajouter des styles pour la taille, la couleur, etc. */
-  }
-  
-  .player img {
-    width: 50px;
-    margin-right: 10px;
-    /* Ajouter des styles pour la taille, la couleur, etc. */
-  }
-  
-  .player span {
-    font-weight: bold;
-    /* Ajouter des styles pour la taille, la couleur, etc. */
-  }
-  
-  .player-item {
-    border: 1px solid black;
-    padding: 5px;
-    margin: 5px;
+  .left {
+      width: 98%;
+      height: 40%;
+      order: 2;
+      font-size: 10px;
   }
 
-  .player-divTeam img {
-    width: 5%;
-  }
-
-  .player-divTeam {
-    display: flex;
-    align-items: center;
+  .right {
+      width: 98%;
+      min-height: 45%;
+      height: auto;
+      order: 1;
+      font-size: 8px;
   }
 
   .element-technique img {
-    height: 24px;
+      height: 12px;
   }
 
-  @font-face {
-    font-family: InazumaNormal;
-    src: url(../fonts/InazumaNormal.otf);
+  .button-area {
+      margin-top: 10px;
   }
+}
 
-  @font-face {
-    font-family: InazumaItalic;
-    src: url(../fonts/InazumaItalic.otf);
-  }
+#search {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
-  @font-face {
-    font-family: InazumaItalicBold;
-    src: url(../fonts/InazumaItalicBold.otf);
-  }
+select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
-    /* Styles for mobile devices */
-    @media (max-width: 767px) {
-      .container {
-        flex-direction: column;
-      }
-  
-      .player-list {
-        margin-top: 15px;
-      }
-    
-      .left {
-        width: 98%;
-        height: 40%;
-        order: 2;
-        font-size: 10px;
-      }
-    
-      .right {
-        width: 98%;
-        min-height: 45%;
-        height: auto;
-        order: 1;
-        font-size: 8px;
-      }
-  
-      .element-technique img {
-        height: 12px;
-      }
-  
-      .button-area {
-        margin-top: 10px;
-      }
-    }
+/* Stylize buttons at the bottom */
+.button-area button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: #24292e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-area button:last-child {
+  margin-right: 0;
+}
+
+.button-area button:hover {
+  background-color: #1c1f23;
+}

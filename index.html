@@ -16,10 +16,19 @@
       <meta name="title" content="Inazuma Eleven Index - Stats & Informations">
       <meta name="description" content="Find all the players from the different Inazuma Eleven games. Their detailed statistics, techniques, and teams. Everything you will need to establish the optimal in-game strategies.">
       <link href="./css/style.css" rel="stylesheet" type="text/css" media="all" />
+      <link href="./css/popup.css" rel="stylesheet" type="text/css" media="all" />
       <script src="./js/special_moves.js"></script>
       <script src="./js/players.js"></script>
    </head>
-   <body onload="alert('This website is still under development. Contact:: tom@ownstudio.fr');">
+   <div id="popUP" class="popUP">
+      <div class="popUP-content">
+        <span class="close">&times;</span>
+        <h2>W.I.P - Early Acces</h2>
+        <p>We are working diligently to provide you with the latest updates. Inazuma Eleven games have a large amount of players, which means updates may take some time. You're welcome to contribute to the project as well. Your patience is greatly appreciated. Stay informed by joining our Discord community.</p>
+        <a href="https://discord.gg/SD9KK3GpVm" class="Pop-discord-btn" target="_blank">Join our Discord</a> <a href="https://github.com/realt0w/inazuma-index" class="Pop-github-btn" target="_blank">Contribute on Github</a>
+      </div>
+  </div>
+   <body>
       <div class="container">
          <div class="left">
             <div class="button-area">
@@ -66,7 +75,7 @@
             <div class="player-list">
             </div>
             <div class="button-area">
-                <button onclick="window.open('https://discord.gg/SD9KK3GpVm', '_blank')">Join Our Discord Server</button>
+                <button onclick="window.open('https://discord.gg/SD9KK3GpVm', '_blank')">Join our Discord</button>
                 <button onclick="window.open('https://inazuma-eleven.fr/team-builder', '_blank')">Build your own team</button>
                 <button onclick="window.open('https://github.com/realt0w/inazuma-index', '_blank')">Github</button>
                 
@@ -78,6 +87,7 @@
             </div>
          </div>
       </div>
+      <script src="./js/popup.js"></script>
       <script src="./js/script.js"></script>
       <script src="./js/click.js"></script>
    </body>
