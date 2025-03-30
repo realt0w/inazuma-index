@@ -599,5 +599,23 @@ const special_moves = {
         element: "Wind",
         type: "Shoot",
     },
+    101: {
+        name: "Shot Pocket", // IE 1
+        TP: 28,
+        element: "Wood",
+        type: "Catch",
+    },
+    102: {
+        name: "Reflect Buster", // IE 1
+        TP: 62,
+        element: "Earth",
+        type: "Shoot",
+    },
+    103: {
+        name: "Meteor Attack", // IE 1
+        TP: 24,
+        element: "Fire",
+        type: "Shoot",
+    },
     // Add more special moves here
 };
