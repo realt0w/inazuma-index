@@ -617,5 +617,17 @@ const special_moves = {
         element: "Fire",
         type: "Shoot",
     },
+    104: {
+        name: "Wood Chopper", // IE 1
+        TP: 19,
+        element: "Earth",
+        type: "Catch",
+    },
+    105: {
+        name: "Dirt Ball", // IE 1
+        TP: 24,
+        element: "Earth",
+        type: "Shoot",
+    },
     // Add more special moves here
 };
