@@ -629,5 +629,11 @@ const special_moves = {
         element: "Earth",
         type: "Shoot",
     },
+    106: {
+        name: "Sliding Goal", // IE 1
+        TP: 34,
+        element: "Earth",
+        type: "Catch",
+    },
     // Add more special moves here
 };
