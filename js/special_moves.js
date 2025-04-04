@@ -635,5 +635,23 @@ const special_moves = {
         element: "Earth",
         type: "Catch",
     },
+    107: {
+        name: "Power Shield", // IE 1
+        TP: 27,
+        element: "Fire",
+        type: "Catch",
+    },
+    108: {
+        name: "Full Power Shield", // IE 1
+        TP: 40,
+        element: "Fire",
+        type: "Catch",
+    },
+    109: {
+        name: "Inazuma Break", // IE 1
+        TP: 46,
+        element: "Wind",
+        type: "Shoot",
+    },
     // Add more special moves here
 };
