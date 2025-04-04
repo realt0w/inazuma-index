@@ -389,5 +389,269 @@ const special_moves = {
         element: "Wind",
         type: "Dribble",
     },
+    66: {
+        name: "Bamboo Pattern", // IE 1
+        TP: 45,
+        element: "Earth",
+        type: "Block",
+    },
+    67: {
+        name: "Astro Break", // IE 2
+        TP: 20,
+        element: "Wood",
+        type: "Shoot",
+    },
+    68: {
+        name: "Warp Drive", // IE 2
+        TP: 14,
+        element: "Wood",
+        type: "Dribble",
+    },
+    69: {
+        name: "Cosmic Blast", // IE 2
+        TP: 28,
+        element: "Wood",
+        type: "Shoot",
+    },
+    70: {
+        name: "Gaia Break", // IE 2
+        TP: 31,
+        element: "Earth",
+        type: "Shoot",
+    },
+    71: {
+        name: "Doom Break G2", // IE 3
+        TP: 67,
+        element: "Earth",
+        type: "Shoot",
+    },
+    72: {
+        name: "Doom Spear V3", // IE 3
+        TP: 46,
+        element: "Wood",
+        type: "Shoot",
+    },
+    73: {
+        name: "Put Your Back Into It!", // IE 3
+        TP: 0,
+        element: "Skill",
+        type: "Skill",
+    },
+    74: {
+        name: "Field of Force", // IE 3
+        TP: 57,
+        element: "Wood",
+        type: "Dribble",
+    },
+    75: {
+        name: "Moonsault", // IE 1
+        TP: 22,
+        element: "Wind",
+        type: "Dribble",
+    },
+    76: {
+        name: "Wild Claw", // IE 1
+        TP: 27,
+        element: "Earth",
+        type: "Catch",
+    },
+    77: {
+        name: "Sumo Stomp", // IE 1
+        TP: 15,
+        element: "Earth",
+        type: "Block",
+    },
+    78: {
+        name: "Horn Train", // IE 1
+        TP: 17,
+        element: "Earth",
+        type: "Block",
+    },
+    79: {
+        name: "Psycho Shot", // IE 1
+        TP: 20,
+        element: "Wood",
+        type: "Shoot",
+    },
+    80: {
+        name: "Death Zone", // IE 1
+        TP: 59,
+        element: "Wood",
+        type: "Shoot",
+    },
+    81: {
+        name: "Pressure Punch", // IE 1
+        TP: 19,
+        element: "Fire",
+        type: "Catch",
+    },
+    82: {
+        name: "Mistral", // IE 1
+        TP: 27,
+        element: "Wind",
+        type: "Catch",
+    },
+    83: {
+        name: "Dash Accelerator", // IE 1
+        TP: 15,
+        element: "Earth",
+        type: "Dribble",
+    },
+    84: {
+        name: "Wrath Shot", // IE 1
+        TP: 35,
+        element: "Wood",
+        type: "Shoot",
+    },
+    85: {
+        name: "Gigant Wall", // IE 1
+        TP: 50,
+        element: "Earth",
+        type: "Catch",
+    },
+    86: {
+        name: "Shine Drive", // IE 1
+        TP: 42,
+        element: "Fire",
+        type: "Shoot",
+    },
+    87: {
+        name: "Hawk Shot", // IE 1
+        TP: 42,
+        element: "Wind",
+        type: "Shoot",
+    },
+    88: {
+        name: "Tarzan Kick", // IE 1
+        TP: 20,
+        element: "Earth",
+        type: "Shoot",
+    },
+    89: {
+        name: "Emperor Penguin No. 2", // IE 1
+        TP: 56,
+        element: "Wood",
+        type: "Shoot",
+    },
+    90: {
+        name: "Toughness Block", // IE 1
+        TP: 17,
+        element: "Earth",
+        type: "Catch",
+    },
+    91: {
+        name: "Cross Drive", // IE 1
+        TP: 33,
+        element: "Wind",
+        type: "Shoot",
+    },
+    92: {
+        name: "Tornado Catch", // IE 1
+        TP: 19,
+        element: "Wind",
+        type: "Catch",
+    },
+    93: {
+        name: "Dynamite Shot", // IE 1
+        TP: 35,
+        element: "Fire",
+        type: "Shoot",
+    },
+    94: {
+        name: "Utter Gutsiness Bat", // IE 1
+        TP: 42,
+        element: "Fire",
+        type: "Shoot",
+    },
+    95: {
+        name: "Snake Shot", // IE 1
+        TP: 17,
+        element: "Earth",
+        type: "Shoot",
+    },
+    96: {
+        name: "Patriot Shot", // IE 1
+        TP: 33,
+        element: "Fire",
+        type: "Shoot",
+    },
+    97: {
+        name: "Breakthrough", // IE 1
+        TP: 22,
+        element: "Fire",
+        type: "Dribble",
+    },
+    98: {
+        name: "Earthquake", // IE 1
+        TP: 30,
+        element: "Earth",
+        type: "Block",
+    },
+    99: {
+        name: "Boost Glider", // IE 1
+        TP: 50,
+        element: "Fire",
+        type: "Dribble",
+    },
+    100: {
+        name: "Condor Dive", // IE 1
+        TP: 24,
+        element: "Wind",
+        type: "Shoot",
+    },
+    101: {
+        name: "Shot Pocket", // IE 1
+        TP: 28,
+        element: "Wood",
+        type: "Catch",
+    },
+    102: {
+        name: "Reflect Buster", // IE 1
+        TP: 62,
+        element: "Earth",
+        type: "Shoot",
+    },
+    103: {
+        name: "Meteor Attack", // IE 1
+        TP: 24,
+        element: "Fire",
+        type: "Shoot",
+    },
+    104: {
+        name: "Wood Chopper", // IE 1
+        TP: 19,
+        element: "Earth",
+        type: "Catch",
+    },
+    105: {
+        name: "Dirt Ball", // IE 1
+        TP: 24,
+        element: "Earth",
+        type: "Shoot",
+    },
+    106: {
+        name: "Sliding Goal", // IE 1
+        TP: 34,
+        element: "Earth",
+        type: "Catch",
+    },
+    107: {
+        name: "Power Shield", // IE 1
+        TP: 27,
+        element: "Fire",
+        type: "Catch",
+    },
+    108: {
+        name: "Full Power Shield", // IE 1
+        TP: 40,
+        element: "Fire",
+        type: "Catch",
+    },
+    109: {
+        name: "Inazuma Break", // IE 1
+        TP: 46,
+        element: "Wind",
+        type: "Shoot",
+    },
     // Add more special moves here
 };
